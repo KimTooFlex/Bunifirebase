@@ -20,7 +20,6 @@ Firebase Db/Auth/ Storage Library for .Net Winform users
  ```csharp
     name = root.child("name");
              name.onValue += Name_onValue;
-
  ```
 #sample event
  ```csharp
