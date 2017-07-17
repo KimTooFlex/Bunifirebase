@@ -1,16 +1,17 @@
 ﻿// ***********************************************************************
-// Assembly         : netFirebase
+// Assembly         : Bunifirebase
 // Author           : KIM TOO FLEX
-// Created          : 07-16-2017
+// Created          : 07-17-2017
 //
 // Last Modified By : KIM TOO FLEX
-// Last Modified On : 07-16-2017
+// Last Modified On : 07-17-2017
 // ***********************************************************************
-// <copyright file="Bunifirebase.cs" company="">
+// <copyright file="firebase.cs" company="Bunfiu Technologies">
 //     Copyright ©  2017
 // </copyright>
 // <summary></summary>
 // ***********************************************************************
+
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -81,6 +82,11 @@ namespace Bunifu.Framework.Firebase
 
         }
 
+        /// <summary>
+        /// Reads the resorce.
+        /// </summary>
+        /// <param name="filename">The filename.</param>
+        /// <returns>System.String.</returns>
         static string readResorce(string filename)
         {
             try
