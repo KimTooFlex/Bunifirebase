@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bunifirebase</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=11" />
+  </head>
+  <body>
+
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+<script> 
+   var config =//[config];
+
+       firebase.initializeApp(config);
+
+       const auth = firebase.auth();
+       auth.onAuthStateChanged(onAuthStateChanged);
+
+       auth.createUserWithEmailAndPassword("kimtooflex23@gmail.com", "kim123456789");
+       //[code]
+
+   //global funct
+  function set(path, value) {
+      try {value = JSON.parse(value); } catch (e) {}
+      return firebase.database().ref(path).set(value);
+  }
+
+  function update(path, value) {
+      try { value = JSON.parse(value); } catch (e) { }
+     return firebase.database().ref(path).update(value);
+  }
+
+  function remove(path) {
+      return  JSON.stringify( firebase.database().ref(path).remove());
+  }
+
+  function push(path, value) {
+       try { value = JSON.parse(value); } catch (e) { }
+     return   firebase.database().ref(path).push(value).key;
+  }
+ 
+  function signInWithEmailAndPassword(email, pass) {
+      try {
+          firebase.auth().signInWithEmailAndPassword(email, pass);
+      } catch (e) {
+          alert(e.message);
+      }
+  }
+    //auth code
+  function createUserWithEmailAndPassword(email, pass) {
+      try {
+          firebase.auth().createUserWithEmailAndPassword(email, pass);
+      } catch (e) {
+          alert(e.message);
+      }
+  }
+
+  function onAuthStateChanged(user) {
+      alert(JSON.stringify(user));
+  }
+
+</script>
+  </body>
+</html>

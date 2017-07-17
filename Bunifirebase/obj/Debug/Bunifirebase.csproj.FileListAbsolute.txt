@@ -1,0 +1,4 @@
+d:\developer zoone\documents\visual studio 2015\Projects\Bunifirebase\Bunifirebase\bin\Debug\Bunifirebase_1.0.0.dll
+d:\developer zoone\documents\visual studio 2015\Projects\Bunifirebase\Bunifirebase\bin\Debug\Bunifirebase_1.0.0.pdb
+d:\developer zoone\documents\visual studio 2015\Projects\Bunifirebase\Bunifirebase\obj\Debug\Bunifirebase_1.0.0.dll
+d:\developer zoone\documents\visual studio 2015\Projects\Bunifirebase\Bunifirebase\obj\Debug\Bunifirebase_1.0.0.pdb
